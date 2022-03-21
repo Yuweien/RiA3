@@ -14,11 +14,22 @@ sd(weight)
 cor(age, weight)
 plot(age, weight)
 
+#See demo images
+demo(image)
+
 # Listing 1.2 An example of commands used to manage
 # the R workspace
-setwd("C:/myprojects/project1")
+getwd()
+setwd("/Users/yuweiwang/RiA3")
 options()
 options(digits = 3)
+
+#create a variable that contains a vector of 20 random distributed numbers 
+x <- runif(20)
+summary(x)
+x
+#create a histogram of x
+hist(x)
 
 # Listing 1.3 Working with a new package
 help.start()
@@ -28,3 +39,4 @@ library(vcd)
 help(Arthritis)
 Arthritis
 example(Arthritis)
+
